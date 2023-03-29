@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// comentario teste
+
+
 void main() {
   runApp(CommunicationApp());
 }
