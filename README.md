@@ -1,4 +1,4 @@
-# communication_app
+# tcc_senai_app_comunicacao
 
 A new Flutter project.
 
