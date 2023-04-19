@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>user-circle.png</file>
     <file>senai-logo.png</file>
   </qresource>
 </RCC>
