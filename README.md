@@ -8,7 +8,7 @@ Este projeto tem como objetivo a aprovação na disciplina de TCC do curso técn
 - Adna Andrade
 - Diego Anjos
 - Victor Hugo
-- Victor Moura
+- Vitor Moura
 - Vitória Simões
 
 
@@ -38,7 +38,6 @@ Este projeto tem como objetivo a aprovação na disciplina de TCC do curso técn
 - Qt5 - Qt Designer
 - MySQL
 
-- alteração - vitor moura - teste
 
 
 
