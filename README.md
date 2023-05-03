@@ -1,4 +1,4 @@
-# tcc_senai_app_comunicacao
+# SENAI TCC - Chamada Ágil
 
 Este projeto tem como objetivo a aprovação na disciplina de TCC do curso técnico em Desenvolvimento de Sistemas, semestre 2023.1 da unidade do SENAI Lauro de Freitas.
 
