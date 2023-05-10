@@ -188,7 +188,7 @@
               <number>0</number>
              </property>
              <item>
-              <widget class="QFrame" name="logoSenai">
+              <widget class="QLabel" name="lblLogoSenai">
                <property name="minimumSize">
                 <size>
                  <width>600</width>
@@ -201,16 +201,8 @@
                  <height>150</height>
                 </size>
                </property>
-               <property name="styleSheet">
-                <string notr="true">QFrame {
-border-image: url(:/newPrefix/senai-logo.png) 0 0 0 0 stretch stretch;
-}</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::NoFrame</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
+               <property name="text">
+                <string/>
                </property>
               </widget>
              </item>
@@ -248,7 +240,7 @@ border-image: url(:/newPrefix/senai-logo.png) 0 0 0 0 stretch stretch;
               <number>0</number>
              </property>
              <item>
-              <widget class="QFrame" name="logoUser">
+              <widget class="QLabel" name="lblUserCircle">
                <property name="minimumSize">
                 <size>
                  <width>100</width>
@@ -261,16 +253,8 @@ border-image: url(:/newPrefix/senai-logo.png) 0 0 0 0 stretch stretch;
                  <height>100</height>
                 </size>
                </property>
-               <property name="styleSheet">
-                <string notr="true">QFrame {
-border-image: url(:/newPrefix/user-circle.png) 0 0 0 0 stretch stretch;
-}</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::NoFrame</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
+               <property name="text">
+                <string/>
                </property>
               </widget>
              </item>

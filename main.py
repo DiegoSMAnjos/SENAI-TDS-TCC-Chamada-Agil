@@ -1,9 +1,13 @@
 from PyQt5 import uic, QtWidgets
 import mysql.connector
+from PyQt5.QtGui import QPixmap
 
 app = QtWidgets.QApplication([])
 home = uic.loadUi("view/home.ui")
-
+senaiLogo = QPixmap("img/senai-logo.png")
+userCircle = QPixmap("img/user-circle.png")
+home.lblLogoSenai.setPixmap(senaiLogo)
+home.lblUserCircle.setPixmap(userCircle)
 home.show()
 
 conexao = mysql.connector.connect(
