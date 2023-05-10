@@ -2,8 +2,7 @@ from PyQt5 import uic, QtWidgets
 import mysql.connector
 
 app = QtWidgets.QApplication([])
-home = uic.loadUi("view\home.ui")
-sucesso = uic.loadUi("sucesso.ui")
+home = uic.loadUi("view/home.ui")
 
 home.show()
 
@@ -13,7 +12,7 @@ conexao = mysql.connector.connect(
     passwd="1234",
     database="db_voluntario")
 
-
+"""
 def cadastrar():
     nome = home.le_nome.text()
     idade = home.le_idade.text()
@@ -76,10 +75,6 @@ def listar():
 home.pb_enviar.clicked.connect(cadastrar)
 home.pb_lista.clicked.connect(listar)
 home.pb_limpar.clicked.connect(limpar)
+"""
+
 app.exec()
-
-
-
-
-
-
