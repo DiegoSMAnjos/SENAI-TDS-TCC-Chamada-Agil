@@ -2,19 +2,26 @@ from PyQt5 import uic, QtWidgets
 import mysql.connector
 from PyQt5.QtGui import QPixmap
 
+from model import Login
+from model.Login import fazerLogin
+
 app = QtWidgets.QApplication([])
-home = uic.loadUi("view/home.ui")
+telaInicio = uic.loadUi("view/telaInicio.ui")
+sucesso = uic.loadUi("view/sucesso.ui")
 senaiLogo = QPixmap("img/senai-logo.png")
 userCircle = QPixmap("img/user-circle.png")
-home.lblLogoSenai.setPixmap(senaiLogo)
-home.lblUserCircle.setPixmap(userCircle)
-home.show()
+telaInicio.lblLogoSenai.setPixmap(senaiLogo)
+telaInicio.lblUserCircle.setPixmap(userCircle)
+telaInicio.show()
 
+'''
 conexao = mysql.connector.connect(
     host="localhost",
     user="root",
     passwd="1234",
     database="db_voluntario")
+'''
+
 
 """
 def cadastrar():
@@ -80,5 +87,13 @@ home.pb_enviar.clicked.connect(cadastrar)
 home.pb_lista.clicked.connect(listar)
 home.pb_limpar.clicked.connect(limpar)
 """
+
+def testeSucesso():
+    sucesso.label.setText("<html><head/><body><p align=\"center\"><span style=\" color:red; font-size:16pt;\">Código Funcionando<br/></span></p></body></html>")
+    sucesso.show()
+
+
+# home.pushButton.clicked.connect(lambda: testeSucesso())
+telaInicio.pushButton.clicked.connect(lambda: fazerLogin(sucesso))
 
 app.exec()
