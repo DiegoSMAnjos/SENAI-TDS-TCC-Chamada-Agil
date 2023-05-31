@@ -39,5 +39,10 @@ Este projeto tem como objetivo a aprovação na disciplina de TCC do curso técn
 - MySQL
 
 
+## Referências
+
+[Inserir dados em uma tabela MySQL com script em Python
+](https://www.youtube.com/watch?v=HiK6OZjumew)
+
 
 
