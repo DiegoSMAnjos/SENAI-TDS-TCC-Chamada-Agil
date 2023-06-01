@@ -28,7 +28,7 @@ Este projeto tem como objetivo a aprovação na disciplina de TCC do curso técn
 
 - O aplicativo funcionará por meio de um cadastro por parte dos docentes e funcionários;
 
-- O docente irá mandar uma mensagem sobre uma dificuldade (falta de internet por exemplo) e o funcionario receberá uma notificação na qual pode atuar rapidamente para resolver o problema;
+- O docente irá mandar uma mensagem sobre uma dificuldade (falta de internet, por exemplo) e o corpo auxiliar receberá uma notificação na qual pode atuar rapidamente para resolver o problema;
 
 - A notificação descreverá a localização, tipo de suporte necessário e descrição básica do problema;
 

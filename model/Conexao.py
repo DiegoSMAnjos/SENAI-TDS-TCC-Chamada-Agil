@@ -29,6 +29,12 @@ def conectar_banco():
                              (3333,'corpo_tecnico');
     """
     cursor.execute(insere_tb_usuario)
+    cria_tb_chamado = """CREATE TABLE IF NOT EXISTS tb_chamado (
+                                idChamado INT NOT NULL AUTO_INCREMENT,
+                                categoria VARCHAR(20),
+                                descricao VARCHAR(300),
+                                
+                                PRIMARY KEY(idChamado));"""
     conexao.commit()
     cursor.close()
 
