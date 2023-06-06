@@ -10,8 +10,12 @@ telaInicio = uic.loadUi("view/telaInicio.ui")
 sucesso = uic.loadUi("view/sucesso.ui")
 senaiLogo = QPixmap("img/senai-logo.png")
 userCircle = QPixmap("img/user-circle.png")
+imagemInicio = QPixmap("img/imagem-inicio.png")
+'''
 telaInicio.lblLogoSenai.setPixmap(senaiLogo)
 telaInicio.lblUserCircle.setPixmap(userCircle)
+telaInicio.lblImagemCapa.setPixmap(imagemInicio)
+'''
 telaInicio.show()
 
 conexao = conectar_banco()
