@@ -1,7 +1,5 @@
 from PyQt5 import uic, QtWidgets
-import mysql.connector
 from PyQt5.QtGui import QPixmap
-from model import Login
 from model.Conexao import conectar_banco
 from model.Login import fazerLogin
 
