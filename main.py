@@ -3,6 +3,8 @@ from PyQt5.QtGui import QPixmap
 from model.Conexao import conectar_banco
 from model.Login import fazerLogin
 
+# status do chamado - aceito ou não
+
 
 app = QtWidgets.QApplication([])
 
