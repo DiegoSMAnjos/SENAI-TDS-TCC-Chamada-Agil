@@ -450,6 +450,11 @@
                     <height>50</height>
                    </size>
                   </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">border-color: rgb(0, 92, 170);</string>
                   </property>
@@ -588,7 +593,7 @@ color: rgb(255, 255, 255);</string>
              <string notr="true">color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>Copyright 2023 © | Andrade, Anjos, Hugo, Moura e Simões</string>
+             <string>Copyright 2023 © | Andrade, Anjos, Hugo, Moura e Simões | Storyset™</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>

@@ -24,12 +24,14 @@ conexao = conectar_banco()
 
 
 def fazerLogin():
+    '''
     if telaInicio.lineEdit.text() == "1111":
         #tela.label.setText(
         #    "<html><head/><body><p align=\"center\"><span style=\" color:red; font-size:16pt;\">Olá Administrador!<br/></span></p></body></html>")
         telaInicio.close()
         telaAdm.show()
-    elif telaInicio.lineEdit.text() == "2222":
+    '''
+    if telaInicio.lineEdit.text() == "2222":
         #tela.label.setText(
         #    "<html><head/><body><p align=\"center\"><span style=\" color:red; font-size:16pt;\">Olá Professor!<br/></span></p></body></html>")
 
@@ -41,8 +43,10 @@ def fazerLogin():
     else:
         #tela.label.setText(
         #    "<html><head/><body><p align=\"center\"><span style=\" color:red; font-size:16pt;\">Insira um código válido! (contacte a administração em caso de dúvidas)<br/></span></p></body></html>")
-        sucesso.show()
+        return
+        # sucesso.show()
     telaInicio.close()
+
 
 telaInicio.pushButton.clicked.connect(lambda: fazerLogin())
 
