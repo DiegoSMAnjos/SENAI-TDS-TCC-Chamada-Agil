@@ -22,6 +22,7 @@ def fazerLogin(self=None):
     if telaInicio.lineEdit.text() == "1111":
         telaProf.show()
     elif telaInicio.lineEdit.text() == "2222":
+        getListaTiposChamada(conexao)
         telaCorpoAux.show()
     else:
         QMessageBox().warning(self, "Erro de Acesso", "Insira um código válido")
@@ -40,13 +41,21 @@ def trocaTelas(tela01, tela02):
 def getListaTiposChamada(conn):
     cursor = conn.cursor()
     sql = """
-        SELECT * FROM tb_chamada;
-    """
+        SELECT c.id AS ID, tc.nome AS Tipo, l.nome AS Local, c.status AS Status, c.descricao AS Descrição
+        FROM tb_chamada c
+        INNER JOIN tb_tipo_chamada tc ON (tc.id = c.idTipoChamada)
+        INNER JOIN tb_localizacao l ON (c.localizacao = l.id);"""
     cursor.execute(sql)
     registros = cursor.fetchall()
+    row = 0
+    telaCorpoAux.tblChamadas.setRowCount(len(registros))
     for registro in registros:
-
-
+        telaCorpoAux.tblChamadas.setItem(row, 0, QtWidgets.QTableWidgetItem(str(registro[0])))
+        telaCorpoAux.tblChamadas.setItem(row, 1, QtWidgets.QTableWidgetItem(str(registro[1])))
+        telaCorpoAux.tblChamadas.setItem(row, 2, QtWidgets.QTableWidgetItem(str(registro[2])))
+        telaCorpoAux.tblChamadas.setItem(row, 3, QtWidgets.QTableWidgetItem(str(registro[3])))
+        telaCorpoAux.tblChamadas.setItem(row, 4, QtWidgets.QTableWidgetItem(str(registro[4])))
+        row += 1
     print(registros)
 
 
@@ -54,5 +63,5 @@ telaProf.btnVoltar.clicked.connect(lambda: trocaTelas(telaProf, telaInicio))
 telaCorpoAux.btnVoltar.clicked.connect(lambda: trocaTelas(telaCorpoAux, telaInicio))
 
 
-getListaTiposChamada(conexao)
+
 app.exec()
