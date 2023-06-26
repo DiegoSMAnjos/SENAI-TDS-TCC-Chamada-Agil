@@ -79,8 +79,8 @@ def conectar_banco():
 
     insere_chamada = """INSERT IGNORE INTO tb_chamada
                             VALUES 
-                                (1,1,3,'A pasta de compartilhamento de arquivos em rede parou de funcionar','Em Aberto'),
-                                (2,2,5,'O chão da sala está sujo de lama','Em Aberto');"""
+                                (1,2,3,'A pasta de compartilhamento de arquivos em rede parou de funcionar','Em Aberto'),
+                                (2,3,5,'O chão da sala está sujo de lama','Em Aberto');"""
     cursor.execute(insere_chamada)
 
     conexao.commit()

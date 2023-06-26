@@ -113,6 +113,7 @@ def getListaTiposChamada(conn):
     cursor.close()
     if row != 0:
         telaCorpoAux.tblChamadas.resizeColumnsToContents()
+    telaCorpoAux.tblChamadas.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
 
 
 def populaListaLocalizacao(conn):
