@@ -458,7 +458,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
                        <number>200</number>
                       </property>
                       <item>
-                       <widget class="QPushButton" name="pushButton">
+                       <widget class="QPushButton" name="btnLogin">
                         <property name="minimumSize">
                          <size>
                           <width>200</width>
