@@ -45,7 +45,7 @@ def getListaTiposChamada(conn):
     cursor.execute(sql)
     registros = cursor.fetchall()
     for registro in registros:
-            
+
 
     print(registros)
 
