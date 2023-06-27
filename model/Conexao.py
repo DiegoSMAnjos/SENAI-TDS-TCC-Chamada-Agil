@@ -2,18 +2,31 @@ import mysql.connector
 
 
 def conectar_banco():
-    conexao = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        passwd="1234",
-    )
+    passwd = ""
+    try:
+        conexao = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd=passwd,
+        )
+    except:
+        try:
+            passwd = "1234"
+            conexao = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                passwd=passwd,
+            )
+        except:
+            print("Erro de autenticacao")
+
     cursor = conexao.cursor()
     cursor.execute("DROP DATABASE IF EXISTS db_chamada_agil;")
     cursor.execute("CREATE DATABASE IF NOT EXISTS db_chamada_agil;")
     conexao = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="1234",
+        passwd=passwd,
         database="db_chamada_agil"
     )
     cursor = conexao.cursor()
