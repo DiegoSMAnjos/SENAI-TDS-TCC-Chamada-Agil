@@ -12,4 +12,4 @@ Este projeto tem como objetivo a aprovação na disciplina de TCC do curso técn
 
 ## Instruções para execução do programa
 
-- Execute o arquivo 'ChamadaAgil.py'
+- Execute o arquivo 'main.py'
